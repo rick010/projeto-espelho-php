@@ -1,0 +1,276 @@
+@font-face{
+    font-family: 'Dax Bold';
+    src: url('../fonts/Dax Bold.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Dax Medium';
+    src: url('../fonts/Dax Medium.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Dax Light';
+    src: url('../fonts/Dax Light.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Dax';
+    src: url('../fonts/Dax.ttf') format('truetype')
+}
+
+:root{
+    --primary-color: #0A4ED1;
+    --tertiary-color: #000;
+    --bg-color: #0D1118;
+
+}
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+body{
+    background-color: var(--bg-color);
+    background-size:norepeat;
+    background-position: center;
+    height: 100vh;
+
+}
+
+h1{
+    font-family: 'Dax Bold';
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.index{
+    font-family: 'Dax Light';
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    
+}
+.lending.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo3{
+    width: 15vw;
+    text-align: start;
+    height: auto;
+    
+    display: block;
+    margin-top: 20px;
+    filter: drop-shadow(0px 4px 4px var(--primary-color));
+    
+}
+
+.btn-primary{
+    font-family: 'Dax';
+    background: linear-gradient(166.72deg, #0A4ED1 9.55%, rgba(63, 150, 220, 0.97901) 60.74%, rgba(137, 250, 236, 0.95) 131.49%) !important;
+
+}
+
+.opencount{
+    font-family: 'Dax Medium' !important;
+   border-radius: 5px;
+   margin-bottom: 10px;
+    background: linear-gradient(166.72deg, #0A4ED1 9.55%, rgba(63, 150, 220, 0.97901) 60.74%, rgba(137, 250, 236, 0.95) 131.49%) !important;
+}
+
+.opencount:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+img.art-bank-online{
+    width: 35vw;
+    height: auto;
+    margin-top: 30px;
+    
+}
+sapn.fs-4{
+    font-family: 'Dax Bold';
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+div.login, div.form-agencia{
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 400px;
+    margin-top: 100px;
+
+}
+
+.form-login button, .register-btn, div.form-agencia button{
+    background-color: #0A4ED1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+label{
+    
+    font-size: 14px;
+    color: #fff !important;
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+div.form-gerente{
+    
+}
+
+footer p{
+    font-family: 'Dax Light';
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+.modal{
+    --bs-modal-bg:#0A4ED1 ;
+    color: #fff !important;
+    --bs-modal-width: 340px;
+   
+}
+
+.bg-darks{
+    background-color: var(--bg-color);
+    color: #fff !important;
+}
+
+
+.bg-darks img{
+
+    width: 150px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.card-text{
+    padding: 0;
+    margin: 0;  
+}
+
+div.saldo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+    color: #000;
+    border-radius: 6px;
+    
+}
+
+.saldo p{
+    padding: 8px 16px;
+    margin: 0;
+}
+
+div.conta-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+    color: #fff;
+    border-radius: 6px;
+    
+}
+
+div.conta-info p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.e-date p{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+
+}
+
+div.transacoes, div.extratos.scroll{
+    max-height: 300px;
+    overflow-y: scroll;
+    white-space: nowrap;    
+}
+
+div.extratos.scroll::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  div.extratos.scroll::-webkit-scrollbar-track {
+    background: #404040; 
+    border-radius: 20px;       /* color of the tracking area */
+  }
+  
+  div.extratos.scroll::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    
+  }
+
+div.transacoes::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  div.transacoes::-webkit-scrollbar-track {
+    background: var(--bg-color);        /* color of the tracking area */
+  }
+  
+  div.transacoes::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--bg-color);  /* creates padding around scroll thumb */
+  }
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);        /* color of the tracking area */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--bg-color);  /* creates padding around scroll thumb */
+  }

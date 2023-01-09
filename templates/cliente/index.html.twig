@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kbank - Cliente{% endblock %}
+
+{% block body %}
+
+{% include "cliente/__navbar.twig" %}
+
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-light mb-5">Minhas Contas</h3>
+                
+                <div class="row">
+                    {% if contas|length == 0 %}
+                    <p class="text-light">Nenhuma conta ativa, aguarde a aprovação do gerente ou solicite a abertura de uma nova conta!</p>
+                    {%endif%}
+                {% for conta in contas %}
+                <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                        <h6 class="card-title mb-2 text-muted">{{ conta.tipo }}</h6>
+                        <h5 class="card-title
+                        {% if conta.saldo < 0 %}
+                        text-danger
+                        {% else %}
+                        text-success
+                        {% endif %}
+                        ">R$ {{ conta.saldo }}</h5>
+                    </div>
+                        <p class="card-text text-dark">Agencia: {{ conta.agencia }}</p>
+                        <p class="card-text text-dark">Conta: {{ conta.numero }}</p>
+
+                        <div class="text-end">
+                            <a href="{{ path('app_cliente_conta', {id: app.user.id, conta: conta.id }) }}" class="btn btn-primary">Acessar conta ></a>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+{% endblock %}
